@@ -1,0 +1,19 @@
+# Settings for the blog listing page
+
+# How posts are displayed on the listing page
+listing:
+  contents:
+    - title
+    - description
+    - date
+    - author
+    - image
+    - categories
+  sort: "date desc" # Show newest posts first
+  type: default # Other options: grid, table
+  categories: true # Enable post categories
+  sort-ui: true # Show sorting controls
+  filter-ui: true # Show filtering controls
+
+# Default options for all posts in this directory
+freeze: true # Automatically re-render when source files change

@@ -1,11 +1,25 @@
 ---
-title: "opensciencenotes.github.io"
+title: "Welcome to OpenScienceNotes"
 ---
 
-This is a Quarto website.
+**A living library of community-driven science knowledge, open to all. 🧪**
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+`OpenScienceNotes` is a collaborative project designed to make core scientific concepts accessible and understandable. We believe that knowledge should be free and transparent, so we're building a collection of high-quality notes for students, researchers, and anyone with a curious mind.
 
-```{r}
-1 + 1
-```
+This platform is built by the community, for the community. Our content is constantly evolving, ensuring it remains accurate, relevant, and easy to digest.
+
+***
+
+### Get Started
+
+Ready to dive in? Here are a few places to start:
+
+* **Explore our Notes:** Begin with our comprehensive section on **[Genetics](./genetics/01-intro-to-genetics.qmd)** to explore the fundamentals of heredity and DNA.
+* **Read the Blog:** Check out our **[Blog](./posts/index.qmd)** for the latest news, discoveries, and discussions in the world of science.
+* **Learn About Us:** Visit our **[About](./about.qmd)** page to learn more about our mission and how you can get involved.
+
+***
+
+### Join Our Mission 🤝
+
+This project thrives on community contributions. If you're passionate about science and education, find out how you can [help us grow](./about.qmd).

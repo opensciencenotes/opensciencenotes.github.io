@@ -1,0 +1,27 @@
+---
+title: "Microbiology: It's a Small World After All"
+---
+
+## Please Excuse the Mess... We're Culturing Our Content!
+
+Welcome to the Microbiology section, the home of the unseen rulers of our planet! Our content for this page is currently incubating. We've prepared the agar plates and sterilised the equipment, but growing a comprehensive guide to bacteria, archaea, viruses, and fungi takes a little time.
+
+We promise we're using sterile techniques to avoid contaminating the information.
+
+### Your Expertise is a Key Ingredient!
+
+Do you have a passion for pathogens? A fondness for fermentation? This is your chance to inoculate our project with your knowledge. We're looking for microbiologists to help us cultivate this section into a world-class resource.
+
+**[Don your virtual lab coat and learn how to contribute!](../about.qmd)**
+
+***
+
+::: {.callout-note icon="true"}
+### Mind-Blowing Microbial Minutiae
+
+* **You're Outnumbered:** For every human cell in your body, there are roughly 1.3 bacterial cells. Don't worry, most of them are helpful!
+
+* **The Smell of Rain:** That fresh, earthy smell after it rains, known as "petrichor," is caused by a chemical called geosmin, which is produced by soil-dwelling bacteria called Actinomycetes.
+
+* **The Planet of the Viruses:** Viruses that infect bacteria are called bacteriophages. They are the most abundant biological entities on Earth, outnumbering all other life forms combined.
+:::

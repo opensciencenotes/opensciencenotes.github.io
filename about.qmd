@@ -1,9 +1,22 @@
 ---
-title: "About"
+title: "About Open Science Notes"
 ---
 
-About this site
+## Our Mission: Science for Everyone
 
-```{r}
-1 + 1
-```
+**Open Science Notes** is an open-source, collaborative platform dedicated to making scientific knowledge accessible, transparent, and free for everyone. Our goal is to create a living collection of high-quality educational notes, chapters, and articles across various scientific disciplines, starting with Genetics, Biology, and more.
+
+This project is for the curious student, the transitioning researcher, the dedicated educator, and the lifelong learner. We believe that science thrives when it is shared openly and built upon collectively.
+
+## How This Site Works
+
+This website is built entirely with open-source tools, primarily using **Quarto** and **R**. It is structured into two main parts:
+
+* **Subject Notes:** These are comprehensive chapters organized by scientific fields like Genetics, Biology, and Microbiology. They are designed to serve as foundational texts.
+* **The Blog:** Our blog features news, updates, and discussions on the latest breakthroughs and topics in the scientific world.
+
+## Join Our Community 🤝
+
+This is a community-driven project, and its success depends on contributors like you. Whether you spot a typo, want to suggest an update to a chapter, or have an idea for a blog post, your input is valuable.
+
+To get involved, please visit our GitHub repository to see how you can contribute. Let's build a rich and reliable resource for the next generation of scientists together!

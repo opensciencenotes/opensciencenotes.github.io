@@ -1,0 +1,33 @@
+---
+title: "An introduction to genetics"
+subtitle: "The code that defines us"
+author: "Dr. Kalonji Tshisekedi"
+date: "2025-07-15"
+---
+
+Welcome to the world of genetics.
+
+Have you ever wondered why you have your mother's eyes, or why certain diseases seem to run in families? The answers to these questions lie in our genes. Genetics is the study of these genes, how they carry information, how they're passed from one generation to the next, and how they make each of us unique.
+
+This section serves as your starting point for understanding this field. We'll journey from the building blocks of life to the genetic tapestry that underpins human health, diversity, and evolution.
+
+### What you will learn
+
+Our journey through genetics will cover the concepts that form the bedrock of our understanding. We'll explore:
+
+* **The human genome:** Structure, organisation, and content.
+* **From gene to function:** Expression and the central dogma.
+* **Human genetic variation:** The catalogue of differences that makes us unique.
+* **Monogenic Mendelian inheritance:** The principles governing single-gene traits.
+* **Cytogenetics:** What happens when whole chromosomes go awry.
+* **Epigenetics:** The layer of control above the genetic code.
+* **The genetics of complex traits:** Moving beyond Mendel to understand common diseases.
+* **Principles of human population genetics:** Tracing our shared genetic history.
+* **Genomic technologies:** The tools we use to read and understand DNA.
+* **Computational genomics:** Turning raw genetic data into biological insight.
+
+### From theory to practice
+
+Understanding genetics is more than an academic exercise. It's at the heart of personalised medicine, allowing us to predict disease risk and tailor treatments. It helps us trace human history and migration across continents, and it gives us the tools to tackle some of the world's most challenging diseases.
+
+We're excited you're here. Let's begin exploring the code that writes the story of life.
