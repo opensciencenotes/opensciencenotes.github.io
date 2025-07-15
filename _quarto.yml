@@ -13,8 +13,8 @@ website:
         menu:
           - href: genetics/01-intro-to-genetics.qmd
             text: "Introduction to Genetics"
-          - href: genetics/02-mendelian-inheritance.qmd
-            text: "Mendelian Inheritance"
+          - href: genetics/02-monogenic-disease.qmd
+            text: "Monogenic Disease"
       - href: biology/index.qmd
         text: Biology
       - href: microbiology/index.qmd
