@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Dr.&nbsp;Kalonji Tshisekedi">
+<meta name="dcterms.date" content="2025-07-15">
+
+<title>An Introduction to Monogenic disease – Open Science Notes</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../opensciencenotes.svg" alt="OpenScienceNotes Logo" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Open Science Notes</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-genetics" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Genetics</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-genetics">    
+        <li>
+    <a class="dropdown-item" href="../genetics/01-intro-to-genetics.html">
+ <span class="dropdown-text">Introduction to Genetics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../genetics/02-mendelian-inheritance.qmd">
+ <span class="dropdown-text">Mendelian Inheritance</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../biology/index.html"> 
+<span class="menu-text">Biology</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../microbiology/index.html"> 
+<span class="menu-text">Microbiology</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../posts/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">An Introduction to Monogenic disease</h1>
+<p class="subtitle lead">From simple rules to complex realities</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Dr.&nbsp;Kalonji Tshisekedi </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 15, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<p>Upon mastering the material in this chapter, the human geneticist will be able to:</p>
+<ul>
+<li><strong>Analyze and Interpret Pedigrees:</strong> Differentiate between autosomal dominant, autosomal recessive, X-linked recessive, and X-linked dominant inheritance patterns by critically evaluating a family history.</li>
+<li><strong>Explain Molecular Mechanisms:</strong> Correlate specific modes of inheritance with their underlying molecular pathologies, including haploinsufficiency, dominant-negative effects, gain-of-function, and loss-of-function.</li>
+<li><strong>Integrate Modifying Factors:</strong> Assess how concepts such as incomplete penetrance, variable expressivity, mosaicism, pleiotropy, and heterogeneity complicate the interpretation of inheritance patterns and clinical presentations.</li>
+<li><strong>Apply Knowledge to Clinical Cases:</strong> For hallmark Mendelian disorders (e.g., Cystic Fibrosis, Huntington’s Disease, Duchenne Muscular Dystrophy, Marfan Syndrome), identify the affected gene, its chromosomal locus, the class of mutation, and the resulting pathophysiology.</li>
+<li><strong>Synthesize for Genetic Counseling:</strong> Utilize these foundational principles to accurately assess recurrence risk and effectively communicate complex genetic information to patients and families.</li>
+</ul>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>At its heart, genetics is a science of information. Imagine our genome is a vast library containing 23 pairs of cookbooks—our chromosomes. Each cookbook contains thousands of recipes, our genes, which provide the instructions for building and operating the human body. A <strong>monogenic disorder</strong> is, in essence, a disease caused by a single, critical typographical error in one of these recipes. This “typo,” or mutation, might alter a key ingredient (an amino acid), change a cooking step (protein folding), or render the recipe entirely unreadable (a null allele). The resulting dish, a protein, may be dysfunctional, absent, or even toxic.</p>
+<p>This beautifully simple concept—one gene, one disorder—forms the bedrock of Mendelian inheritance. Named after Gregor Mendel and his pea plants, these patterns are governed by the fundamental laws of probability. Just as the toss of a coin has a predictable outcome over many trials, the transmission of a mutated gene from parent to child follows discernible, statistically reliable patterns. This chapter will deconstruct these patterns, moving from the foundational principles of dominance and recessiveness to the complex molecular mechanisms and clinical presentations that define monogenic disease in humans. We will explore how a single altered base pair can manifest as a complex, multi-system disorder and how understanding these pathways is central to modern genetic counseling, diagnosis, and the development of targeted therapeutics.</p>
+</section>
+<section id="autosomal-dominant-ad-inheritance" class="level2">
+<h2 class="anchored" data-anchor-id="autosomal-dominant-ad-inheritance">Autosomal Dominant (AD) Inheritance</h2>
+<p>Autosomal dominant inheritance is characterized by its <strong>vertical transmission</strong> pattern; the phenotype typically appears in every generation of a pedigree. The disorder manifests in the heterozygous state, meaning an individual needs only one copy of the mutated allele to be affected. A key feature is that an affected individual has a 50% probability of transmitting the disease-causing allele to each offspring, irrespective of sex.</p>
+<section id="mechanisms-and-molecular-consequences" class="level3">
+<h3 class="anchored" data-anchor-id="mechanisms-and-molecular-consequences">Mechanisms and Molecular Consequences</h3>
+<p>The biological underpinnings of dominance are more complex than simple presence or absence. Several distinct molecular mechanisms can produce a dominant phenotype:</p>
+<ol type="1">
+<li><strong>Haploinsufficiency:</strong> This is perhaps the most common mechanism. In this scenario, 50% of the normal level of the gene product is insufficient to maintain a normal phenotype. The single wild-type allele cannot compensate for the loss-of-function of the mutated allele. A classic example is <strong>Marfan Syndrome</strong>, caused by mutations in the <em>FBN1</em> gene (locus 15q21.1), which encodes fibrillin-1. Fibrillin-1 is a critical component of extracellular microfibrils. Heterozygotes produce only half the required amount of functional fibrillin-1, leading to weakened connective tissue and the characteristic skeletal, ocular, and cardiovascular abnormalities.</li>
+<li><strong>Dominant-Negative Effect:</strong> Here, the abnormal protein produced by the mutated allele not only loses its own function but also actively interferes with the function of the protein produced by the wild-type allele. This is often seen in proteins that form dimers or larger oligomeric complexes. For instance, in many forms of <strong>Osteogenesis Imperfecta</strong> (“brittle bone disease”), mutations in the <em>COL1A1</em> or <em>COL1A2</em> genes produce a structurally abnormal pro-alpha chain of type I collagen. This abnormal chain incorporates into the collagen triple helix, disrupting the entire structure and compromising the integrity of the extracellular matrix far more severely than if no chain were produced at all.</li>
+<li><strong>Gain-of-Function:</strong> In this class of mutations, the altered gene product acquires a novel molecular function or exhibits increased or unregulated activity. This new function is often toxic. The archetypal example is <strong>Huntington’s Disease (HD)</strong>, a progressive neurodegenerative disorder. It is caused by an expansion of a CAG trinucleotide repeat in the coding region of the <em>HTT</em> gene (4p16.3). This leads to an elongated polyglutamine tract in the huntingtin protein, causing it to misfold, aggregate, and gain a novel toxic function that results in neuronal death, particularly in the striatum.</li>
+</ol>
+</section>
+<section id="penetrance-and-expressivity" class="level3">
+<h3 class="anchored" data-anchor-id="penetrance-and-expressivity">Penetrance and Expressivity</h3>
+<p>Two concepts are critical for interpreting AD pedigrees:</p>
+<ul>
+<li><strong>Penetrance</strong> refers to the probability that a person with a disease-causing genotype will exhibit the phenotype. If all individuals with the mutation show the disease, penetrance is 100%. However, in cases of <strong>incomplete penetrance</strong>, an individual may carry the mutation but appear phenotypically normal. They can, however, still pass the mutation to their children, who may then be affected.</li>
+<li><strong>Variable expressivity</strong> describes the range of signs and symptoms that can occur in different people with the same genetic condition. For example, individuals with neurofibromatosis type 1 (<em>NF1</em> mutations) can have phenotypes ranging from a few café-au-lait spots to severe clinical manifestations including neurofibromas, optic gliomas, and skeletal dysplasia.</li>
+</ul>
+</section>
+</section>
+<section id="autosomal-recessive-ar-inheritance" class="level2">
+<h2 class="anchored" data-anchor-id="autosomal-recessive-ar-inheritance">Autosomal Recessive (AR) Inheritance</h2>
+<p>Autosomal recessive disorders manifest only when an individual is homozygous or compound heterozygous for a disease-causing allele. Parents are most often asymptomatic carriers (heterozygotes), and the phenotype often appears in siblings of the proband rather than in preceding generations, leading to a <strong>horizontal transmission</strong> pattern in pedigrees. For each pregnancy, carrier parents have a 25% chance of having an affected child (p(a/a)=0.5×0.5=0.25), a 50% chance of having an asymptomatic carrier child, and a 25% chance of having an unaffected, non-carrier child.</p>
+<section id="mechanisms-and-consanguinity" class="level3">
+<h3 class="anchored" data-anchor-id="mechanisms-and-consanguinity">Mechanisms and Consanguinity</h3>
+<p>The vast majority of AR disorders are caused by <strong>loss-of-function</strong> mutations. In heterozygotes, the 50% of protein product produced by the single wild-type allele is sufficient to maintain a normal phenotype; this is the definition of a recessive allele. Most inborn errors of metabolism fall into this category, where a mutation incapacitates an enzyme.</p>
+<p>The frequency of AR disorders is significantly increased by <strong>consanguinity</strong> (mating between relatives). Relatives share a greater proportion of their genes, inherited from a common ancestor. If a founder in a family carried a rare recessive allele, it is more likely to become homozygous in the offspring of a consanguineous union.</p>
+</section>
+<section id="clinical-examples" class="level3">
+<h3 class="anchored" data-anchor-id="clinical-examples">Clinical Examples</h3>
+<ul>
+<li><strong>Cystic Fibrosis (CF):</strong> This is the most common life-limiting AR disorder among people of Northern European descent. It is caused by mutations in the <em>CFTR</em> gene (7q31.2), which encodes the cystic fibrosis transmembrane conductance regulator, a chloride ion channel. The most frequent mutation, a deletion of phenylalanine at position 508 (ΔF508), results in a misfolded protein that is degraded by the cell. The absence of this channel on the apical surface of epithelial cells leads to thick, viscous mucus, causing the characteristic pulmonary and pancreatic insufficiency.</li>
+<li><strong>Sickle Cell Anemia:</strong> Caused by a single missense mutation (p.Glu6Val) in the <em>HBB</em> gene (11p15.5) encoding the β-globin chain of hemoglobin. In conditions of low oxygen, the mutant hemoglobin (HbS) polymerizes, deforming red blood cells into a rigid, sickle shape. This leads to hemolysis, vaso-occlusion, and severe pain. The persistence of this allele in certain populations is a classic example of <strong>heterozygote advantage</strong>, as carriers (with sickle cell trait) show increased resistance to malaria.</li>
+</ul>
+</section>
+</section>
+<section id="x-linked-inheritance" class="level2">
+<h2 class="anchored" data-anchor-id="x-linked-inheritance">X-Linked Inheritance</h2>
+<p>Genes on the X chromosome exhibit a unique pattern of inheritance because males (XY) are hemizygous for these genes, while females (XX) have two copies.</p>
+<section id="x-linked-recessive-xlr" class="level3">
+<h3 class="anchored" data-anchor-id="x-linked-recessive-xlr">X-Linked Recessive (XLR)</h3>
+<p>In XLR inheritance, the incidence is much higher in males than in females. A male needs only one copy of the mutant allele to be affected. An affected father cannot pass the trait to his sons, as he gives them his Y chromosome. However, he will pass the mutated allele to all of his daughters, who will then be obligate carriers. Carrier females are typically unaffected but have a 50% chance of passing the mutation to their sons (who will be affected) and a 50% chance of passing it to their daughters (who will be carriers).</p>
+<p>A crucial concept in females is <strong>lyonization</strong>, or random X-inactivation. Early in embryonic development, one of the two X chromosomes in each somatic cell is randomly and permanently inactivated. Usually, this results in approximately 50% of cells expressing the paternal X and 50% expressing the maternal X. However, if this process is skewed, a carrier female may have a higher proportion of cells with the wild-type X inactivated and can exhibit symptoms, a phenomenon known as a <strong>manifesting heterozygote</strong>.</p>
+<ul>
+<li><strong>Clinical Example: Duchenne Muscular Dystrophy (DMD):</strong> A severe, progressive myopathy caused by mutations in the <em>DMD</em> gene (Xp21.2), which encodes dystrophin. Dystrophin links the internal cytoskeleton to the extracellular matrix in muscle cells, providing structural stability. Most DMD-causing mutations are deletions or duplications that cause a frameshift, leading to a premature stop codon and a complete absence of functional protein. A milder form, <strong>Becker Muscular Dystrophy (BMD)</strong>, is caused by in-frame mutations in the same gene, producing a truncated but partially functional dystrophin protein.</li>
+</ul>
+</section>
+<section id="x-linked-dominant-xld" class="level3">
+<h3 class="anchored" data-anchor-id="x-linked-dominant-xld">X-Linked Dominant (XLD)</h3>
+<p>XLD disorders are rarer and affect both males and females, though they are often more severe in males. An affected male will transmit the disorder to all of his daughters and none of his sons. An affected female has a 50% chance of passing the condition to each child, regardless of sex. In some XLD conditions, the phenotype is lethal in hemizygous males, so the disorder is seen exclusively in females.</p>
+<ul>
+<li><strong>Clinical Example: Fragile X Syndrome (FXS):</strong> While its inheritance is complex, FXS serves as an important X-linked example. It results from a massive expansion of a CGG trinucleotide repeat in the 5’ untranslated region of the <em>FMR1</em> gene (Xq27.3). This expansion leads to hypermethylation and transcriptional silencing of the gene, resulting in a loss of the FMRP protein, which is vital for synaptic plasticity. This is the most common inherited form of intellectual disability.</li>
+<li><strong>Clinical Example: Rett Syndrome:</strong> Caused by mutations in the <em>MECP2</em> gene (Xq28), this neurodevelopmental disorder almost exclusively affects females because it is typically lethal in males <em>in utero</em>. After a period of normal early development, girls with Rett syndrome experience a rapid regression in language and motor skills.</li>
+</ul>
+</section>
+</section>
+<section id="factors-complicating-mendelian-patterns" class="level2">
+<h2 class="anchored" data-anchor-id="factors-complicating-mendelian-patterns">Factors Complicating Mendelian Patterns</h2>
+<p>While the rules of Mendelian inheritance provide a robust framework, several phenomena can complicate the interpretation of human pedigrees.</p>
+<ul>
+<li><strong>Mosaicism:</strong> The presence of two or more cell lines with different genotypes in one individual, derived from a single zygote. <strong>Somatic mosaicism</strong> occurs post-zygotically and is generally not heritable. In contrast, <strong>germline mosaicism</strong> involves a mutation present only in a subset of the germ cells. This is an important consideration when a child is born with a seemingly <em>de novo</em> autosomal dominant disorder to unaffected parents; the parents may have a risk of recurrence in future pregnancies that is higher than the general population risk due to mosaicism in one parent’s germline.</li>
+<li><strong>Pleiotropy:</strong> Occurs when a single gene influences multiple, often seemingly unrelated, phenotypic traits. Marfan syndrome, for example, demonstrates pleiotropy, with mutations in <em>FBN1</em> causing skeletal, ocular, and cardiovascular defects.</li>
+<li><strong>Locus Heterogeneity:</strong> This occurs when mutations at different gene loci can produce the same or a similar phenotype. For example, <strong>Retinitis Pigmentosa</strong>, a form of progressive retinal degeneration, can be caused by mutations in over 100 different genes.</li>
+<li><strong>Allelic Heterogeneity:</strong> This refers to the fact that different mutations within the same gene can cause a single disorder. In CF, over 2,000 different mutations have been identified in the <em>CFTR</em> gene. Importantly, different mutations at the same locus can also lead to different diseases, as seen with mutations in the <em>RET</em> proto-oncogene, which can cause either multiple endocrine neoplasia type 2 (gain-of-function) or Hirschsprung disease (loss-of-function).</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

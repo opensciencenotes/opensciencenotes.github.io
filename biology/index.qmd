@@ -1,0 +1,27 @@
+---
+title: "Biology: The Grand Saga of Life"
+---
+
+## This Digital Ecosystem is Still Evolving!
+
+Welcome to the Biology section of OpenScienceNotes! Right now, this page is in its primordial soup phase—full of potential but not quite crawling onto land yet.
+
+Our digital naturalists are planning expeditions into the vast territories of cellular biology, ecology, evolution, and everything in between. We're just waiting for the grant funding (and more coffee).
+
+### Join the Expedition!
+
+Are you a biologist who knows your Krebs cycle from your Cambrian explosion? We need pioneers like you to help us map this incredible domain. Don't let these pages remain fossilised!
+
+**[Find out how you can contribute on our About page!](../about.qmd)**
+
+***
+
+::: {.callout-tip icon="true"}
+### A Few Biological Curiosities to Ponder
+
+* **Sunburnt Tongues?** A giraffe's tongue is dark blue/black and can be up to 45 cm long. The dark colour is thought to prevent it from getting sunburnt while it's out munching on acacia trees all day.
+
+* **The Immortal Animal:** The "immortal jellyfish" (*Turritopsis dohrnii*) has a unique party trick. When faced with stress or old age, it can revert back to its earliest stage—a polyp—and start its life cycle all over again.
+
+* **Chatty Trees:** Trees can "talk" to each other! They are connected by an underground network of fungi, often called the "Wood Wide Web," which they use to share nutrients and send warnings about insect attacks.
+:::

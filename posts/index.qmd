@@ -1,0 +1,7 @@
+---
+title: "Open Science Notes Blog"
+listing:
+  sort: "date desc"
+  type: default
+  categories: true
+---
