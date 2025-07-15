@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://opensciencenotes.github.io/posts/index.html</loc>
+    <lastmod>2025-07-15T18:33:40.182Z</lastmod>
+  </url>
+  <url>
+    <loc>https://opensciencenotes.github.io/genetics/01-intro-to-genetics.html</loc>
+    <lastmod>2025-07-15T18:33:40.179Z</lastmod>
+  </url>
+  <url>
     <loc>https://opensciencenotes.github.io/index.html</loc>
-    <lastmod>2025-07-15T17:43:19.168Z</lastmod>
+    <lastmod>2025-07-15T18:33:40.179Z</lastmod>
   </url>
   <url>
     <loc>https://opensciencenotes.github.io/about.html</loc>
-    <lastmod>2025-07-15T17:43:19.168Z</lastmod>
+    <lastmod>2025-07-15T18:33:40.179Z</lastmod>
+  </url>
+  <url>
+    <loc>https://opensciencenotes.github.io/biology/index.html</loc>
+    <lastmod>2025-07-15T18:33:40.179Z</lastmod>
+  </url>
+  <url>
+    <loc>https://opensciencenotes.github.io/microbiology/index.html</loc>
+    <lastmod>2025-07-15T18:33:40.179Z</lastmod>
+  </url>
+  <url>
+    <loc>https://opensciencenotes.github.io/genetics/02-monogenic-disease.html</loc>
+    <lastmod>2025-07-15T18:33:40.179Z</lastmod>
+  </url>
+  <url>
+    <loc>https://opensciencenotes.github.io/posts/2025-07-15-latest-crispr-discovery/index.html</loc>
+    <lastmod>2025-07-15T18:33:40.182Z</lastmod>
   </url>
 </urlset>

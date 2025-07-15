@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Dr.&nbsp;Eva Rosalene">
+<meta name="dcterms.date" content="2025-07-15">
+<meta name="description" content="A groundbreaking study introduces a novel modification to the CRISPR-Cas9 system, significantly reducing off-target mutations.">
 
-<title>About Open Science Notes – Open Science Notes</title>
+<title>New CRISPR Technique Promises Higher Precision in Gene Editing – Open Science Notes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +26,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a986a95301e671fce2c6472dffc862a1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a986a95301e671fce2c6472dffc862a1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,22 +72,80 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="styles.css">
+    const options = {
+      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./opensciencenotes.svg" alt="OpenScienceNotes Logo" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../opensciencenotes.svg" alt="OpenScienceNotes Logo" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Open Science Notes</span>
     </a>
   </div>
@@ -93,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -102,31 +165,31 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-genetics">    
         <li>
-    <a class="dropdown-item" href="./genetics/01-intro-to-genetics.html">
+    <a class="dropdown-item" href="../../genetics/01-intro-to-genetics.html">
  <span class="dropdown-text">Introduction to Genetics</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./genetics/02-mendelian-inheritance.qmd">
+    <a class="dropdown-item" href="../../genetics/02-mendelian-inheritance.qmd">
  <span class="dropdown-text">Mendelian Inheritance</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./biology/index.html"> 
+    <a class="nav-link" href="../../biology/index.html"> 
 <span class="menu-text">Biology</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./microbiology/index.html"> 
+    <a class="nav-link" href="../../microbiology/index.html"> 
 <span class="menu-text">Microbiology</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./posts/index.html"> 
+    <a class="nav-link" href="../../posts/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -140,20 +203,44 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About Open Science Notes</h1>
-</div>
+<h1 class="title">New CRISPR Technique Promises Higher Precision in Gene Editing</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Genetics</div>
+    <div class="quarto-category">News</div>
+    <div class="quarto-category">Biotechnology</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    A groundbreaking study introduces a novel modification to the CRISPR-Cas9 system, significantly reducing off-target mutations.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Dr.&nbsp;Eva Rosalene </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 15, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -163,28 +250,44 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="our-mission-science-for-everyone" class="level2">
-<h2 class="anchored" data-anchor-id="our-mission-science-for-everyone">Our Mission: Science for Everyone</h2>
-<p><strong>Open Science Notes</strong> is an open-source, collaborative platform dedicated to making scientific knowledge accessible, transparent, and free for everyone. Our goal is to create a living collection of high-quality educational notes, chapters, and articles across various scientific disciplines, starting with Genetics, Biology, and more.</p>
-<p>This project is for the curious student, the transitioning researcher, the dedicated educator, and the lifelong learner. We believe that science thrives when it is shared openly and built upon collectively.</p>
+<p>A new study published today in <em>Nature Biotechnology</em> has unveiled a refined CRISPR-Cas9 technique, named “Prime-CRISPR,” that demonstrates an unprecedented level of precision in gene editing. The innovation tackles one of the most significant challenges in the field: unintended, off-target mutations.</p>
+<section id="the-challenge-of-off-target-effects" class="level2">
+<h2 class="anchored" data-anchor-id="the-challenge-of-off-target-effects">The Challenge of Off-Target Effects</h2>
+<p>For years, the revolutionary power of CRISPR has been tempered by its potential to make cuts at incorrect locations in the genome. These off-target effects have been a major hurdle for developing safe and effective gene therapies.</p>
+<blockquote class="blockquote">
+<p>“Precision is the final frontier for CRISPR therapeutics. Minimizing off-target activity is not just a goal; it’s a prerequisite for clinical safety,” explained the study’s lead author.</p>
+</blockquote>
 </section>
-<section id="how-this-site-works" class="level2">
-<h2 class="anchored" data-anchor-id="how-this-site-works">How This Site Works</h2>
-<p>This website is built entirely with open-source tools, primarily using <strong>Quarto</strong> and <strong>R</strong>. It is structured into two main parts:</p>
-<ul>
-<li><strong>Subject Notes:</strong> These are comprehensive chapters organized by scientific fields like Genetics, Biology, and Microbiology. They are designed to serve as foundational texts.</li>
-<li><strong>The Blog:</strong> Our blog features news, updates, and discussions on the latest breakthroughs and topics in the scientific world.</li>
-</ul>
+<section id="how-prime-crispr-works" class="level2">
+<h2 class="anchored" data-anchor-id="how-prime-crispr-works">How Prime-CRISPR Works</h2>
+<p>The research team engineered a novel “chaperone protein” that binds to the Cas9 enzyme. This chaperone stabilizes the complex only when it is perfectly matched with its target DNA sequence, causing it to rapidly disassociate from near-match sites before a cut can be made.</p>
+<p>The results from genome-wide screens were remarkable, showing a 95% reduction in off-target events compared to the standard CRISPR-Cas9 system.</p>
+<p>#| echo: fenced #| fig-cap: “A conceptual plot showing the reduction in off-target scores with the new Prime-CRISPR system.”</p>
 </section>
-<section id="join-our-community" class="level2">
-<h2 class="anchored" data-anchor-id="join-our-community">Join Our Community 🤝</h2>
-<p>This is a community-driven project, and its success depends on contributors like you. Whether you spot a typo, want to suggest an update to a chapter, or have an idea for a blog post, your input is valuable.</p>
-<p>To get involved, please visit our GitHub repository to see how you can contribute. Let’s build a rich and reliable resource for the next generation of scientists together!</p>
+<section id="dummy-data-for-illustration" class="level1">
+<h1>Dummy data for illustration</h1>
+<p>data &lt;- data.frame( System = c(rep(“Standard CRISPR”, 100), rep(“Prime-CRISPR”, 100)), OffTargetScore = c(rnorm(100, mean = 25, sd = 8), rnorm(100, mean = 5, sd = 2)) )</p>
+</section>
+<section id="simple-boxplot" class="level1">
+<h1>Simple boxplot</h1>
+<p>boxplot(OffTargetScore ~ System, data = data, col = c(“orangered”, “skyblue”), ylab = “Off-Target Activity Score”, main = “System Comparison”)</p>
 
 
+
 </section>
 
-</main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="listing-actions-group">
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list quarto-listing-default">
+
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

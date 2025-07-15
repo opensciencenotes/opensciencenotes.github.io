@@ -1,1 +1,14 @@
 /* css styles */
+/* -- Logo Size Control -- */
+
+.navbar-brand img {
+  height: 100px; /* Adjust this value to your desired logo height */
+  width: auto;
+  max-height: none; /* Override any theme-specific max height */
+}
+
+/* Optional: Adjust navbar padding if the bigger logo doesn't fit */
+.navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
